@@ -22,226 +22,226 @@
 
 
     block001_str1:
-    .string "No se detecta tarjeta." ; 記録メディアを検出することができませんでした。
+    .string "Card not detected." ;
     .align 4
 
-	.byte 0x0A ; Control code for separating different strings
+	.byte 0x0A ;
 
     block001_str2:
-    .string "Se requieren %dKB de espacio en memoria para este juego." ; このゲームのデータをセーブするには空き容量が%dKB以上の記録メディアが必要です。
+    .string "%dKB of memory space is required for this game." ;
     .align 4
 
-	.org 0x0109 ; goes to next offset
+	.org 0x0109 ;
 
     block002_str1:
-    .string "No hay suficiente espacio en memoria." ; 記録メディアの空き容量が不足しています。
+    .string "Not enough memory space." ;
     .align 4
 
-	.byte 0x0A ; Control code for separating different strings
+	.byte 0x0A ;
 	
     block002_str2:
-    .string "Para guardar se necesitan aun %dKB." ; このゲームのデータをセーブするには空き容量があと%dKB以上必要です。
+    .string "%dKB is still needed to save." ;
     .align 4	
 	
-	.org 0x017C ; goes to next offset	
+	.org 0x017C ;	
 	
     block003_str1:
-    .string "¿Quieres borrar archivos y hacer espacio?" ; 記録メディアから不要なデータを削除しますか？
+    .string "Do you want to delete files and make space?" ;
     .align 4	
 
-	.org 0x01A9 ; goes to next offset
+	.org 0x01A9 ;
 
     block004_str1:
-    .string "Se ha cancelado el borrado."; データの削除をキャンセルしました。
+    .string "Deletion canceled." ;
     .align 4
 
-	.byte 0x0A ; Control code for separating different strings
+	.byte 0x0A ;
 	
     block004_str2:
-    .string "Guardando."; セーブに移行します。
+    .string "Saving." ;
     .align 4	
 
-	.org 0x01E2 ; goes to next offset
+	.org 0x01E2 ;
 
     block005_str1:
-    .string "El borrado de memoria se ha detenido." ;  データの削除が中断されました。 
+    .string "Memory deletion has stopped." ;
     .align 4
 
-	.byte 0x0A ; Control code for separating different strings
+	.byte 0x0A ;
 	
     block005_str2:
-    .string "¿Quieres borrar datos no deseados?" ;  記録メディアから不要なデータを削除しますか？
+    .string "Do you want to delete unwanted data?" ;
     .align 4	
 	
-	.org 0x022F ; goes to next offset    
+	.org 0x022F ;    
 	
     block006_str1:
-    .string "Guardando." ; セーブに移行します。
+    .string "Saving." ;
     .align 4	
 
-	.org 0x0244 ; goes to next offset
+	.org 0x0244 ;
 
     block007_str1:
-    .string "Tiempo de juego: %2dh %2dmin %2ds." ; プレイ時間 %2d時間%2d分%2d秒
+    .string "Game time: %2dh %2dmin %2ds." ;
     .align 4
 
-	.org 0x026B ; goes to next offset
+	.org 0x026B ;
 
     block008_str1:
-    .string "OK"; ＯＫ 
+    .string "OR" ;
     .align 4
 
-	.org 0x0270 ; goes to next offset
+	.org 0x0270 ;
 	
     block009_str1:
-    .string "Cancelar" ; キャンセル 
+    .string "Cancel" ;
     .align 4	
 
-	.org 0x027B ; goes to next offset
+	.org 0x027B ;
 
     block010_str1:
-    .string "Empezar" ; はじめから 
+    .string "Start" ;
     .align 4
 
-	.org 0x0286 ; goes to next offset
+	.org 0x0286 ;
 
     block011_str1:
-    .string "Continuar" ; つづきから
+    .string "Continue" ;
     .align 4
 
-	.org 0x0291 ; goes to next offset
+	.org 0x0291 ;
 	
     block012_str1:
-    .string "Digivice Ver. Portable." ; デジヴァイスVer.Portable
+    .string "Digivice Ver. Portable." ;
     .align 4
 
-	.org 0x02B6 ; goes to next offset
+	.org 0x02B6 ;
 
     block013_str1:
-    .string "Datos prev." ; セーブデータ
+    .string "Previous data." ;
     .align 4
 
-	.org 0x02C3 ; goes to next offset
+	.org 0x02C3 ;
 
     block014_str1:
-    .string "Digivice Ver. Portable: Datos guardos." ; デジヴァイスVer.Portableのセーブデータです。 
+    .string "Digivice Ver. Portable: Saved data." ;
     .align 4
 
-	.org 0x02FC ; goes to next offset
+	.org 0x02FC ;
 
     block015_str1:
-    .string "Ed. Greymon" ; グレイモンカラー 
+    .string "Greymon Edition." ;
     .align 4	
 
-	.org 0x030D ; goes to next offset
+	.org 0x030D ;
 
     block016_str1:
-    .string "Ed. Garurumon" ; ガルルモンカラー
+    .string "Garurumon Edition." ;
     .align 4
 
-	.org 0x031E ; goes to next offset
+	.org 0x031E ;
 
     block017_str1:
-    .string "Ed. Anime" ; アニメカラー 
+    .string "Anime Edition." ;
     .align 4
 
-	.org 0x032B ; goes to next offset
+	.org 0x032B ;
 	
     block018_str1:
-    .string "Ed. Tailmon" ; テイルモンカラー
+    .string "Tailmon Edition." ;
     .align 4	
 
-	.org 0x033C ; goes to next offset
+	.org 0x033C ;
 	
     block019_str1:
-    .string "Ed. Normal" ; ノーマルカラー 
+    .string "Normal Edition." ;
     .align 4				
 
-	.org 0x034A ; goes to next offset
+	.org 0x034A ;
 
     block020_str1:
-    .string "Guardar" ; セーブ 
+    .string "Save" ;
     .align 4
 
-	.org 0x0352 ; goes to next offset
+	.org 0x0352 ;
 
     block021_str1:
-    .string "Cambiar ed." ; カラーチェンジ 
+    .string "Change edition." ;
     .align 4
 
-	.org 0x0361 ; goes to next offset
+	.org 0x0361 ;
 	
     block022_str1:
-    .string "Wifi:  OFF" ; 通信バトル設定：有効
+    .string "Wifi: OFF" ;
     .align 4
 
-	.byte 0x0A ; Control code for separating different strings
+	.byte 0x0A ;
 
-	.org 0x0377 ; goes to next offset
+	.org 0x0377 ;
 
     block022_str2:
-    .string "¿Guardar?" ; セーブしますか？
+    .string "Save?" ;
     .align 4
 
-	.byte 0x0A ; Control code for separating different strings
-	.org 0x0389 ; goes to next offset
+	.byte 0x0A ;
+	.org 0x0389 ;
 	
     block022_str3:
-    .string "¡Guardando!" ; セーブ中！
+    .string "Saving!" ;
     .align 4
 
-	.org 0x0396 ; goes to next offset
+	.org 0x0396 ;
 	
     block023_str1:
-    .string "Guardado." ; セーブ完了 
+    .string "Saved." ;
     .align 4	
 
-	.org 0x03A0 ; goes to next offset
+	.org 0x03A0 ;
 
     block024_str1:
-    .string "Se ha cancelado el guardado." ; セーブが中断されました。
+    .string "Saving has been canceled." ;
     .align 2
 
-	.byte 0x0A ; Control code for separating different strings
+	.byte 0x0A ;
 	
     block024_str2:
-    .string "¿Reintentar?" ; リトライしますか？
+    .string "Retry?" ;
     .align 4
 
-	.byte 0x0A ; Control code for separating different strings
+	.byte 0x0A ;
 	
-	.org 0x03CE ; goes to next offset
+	.org 0x03CE ;
 
     block024_str3:
-    .string "¿Activar batalla vs PNJ?" ; ＮＰＣ対戦設定：無効
+    .string "Activate battle vs NPC?" ;
     .align 4
 
-	.byte 0x0A ; Control code for separating different strings
+	.byte 0x0A ;
 
     block024_str4:
-    .string "ＮＰＣ対戦を有効にしますか？" ; ＮＰＣ対戦を有効にしますか？
+    .string "Enable NPC battle?" ;
     .align 4
  
-	.byte 0x0A ; Control code for separating different strings
+	.byte 0x0A ;
 	
-	.org 0x0405 ; goes to next offset	
+	.org 0x0405 ;	
 	
     block024_str5:
-    .string "Wifi: ON" ; 通信バトル設定：無効 
+    .string "Wifi: ON" ;
     .align 2	
 
-	.byte 0x0A ; Control code for separating different strings
+	.byte 0x0A ;
 
-	.org 0x041B ; goes to next offset
+	.org 0x041B ;
 
     block024_str6:
-    .string "¿Desactivar batalla vs PNJ?" ; ＮＰＣ対戦設定：有効
+    .string "Deactivate battle vs NPC?" ;
     .align 4
 
-	.byte 0x0A ; Control code for separating different strings
+	.byte 0x0A ;
 
     block024_str7:
-    .string "ＮＰＣ対戦を無効にしますか？" ; ＮＰＣ対戦を無効にしますか？
+    .string "Disable NPC battle?" ;
     .align 4
 	
 .close
